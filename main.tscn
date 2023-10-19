@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://v58637xniyty"]
+
+[ext_resource type="Texture2D" uid="uid://bs13bjdsafkg2" path="res://icon.svg" id="1_54rmd"]
+[ext_resource type="PackedScene" uid="uid://blbf3trp075ku" path="res://assets/Sprite-0002.aseprite" id="3_jdbg3"]
+[ext_resource type="Texture2D" uid="uid://ck0bekggcfh10" path="res://assets/Sprite-0001.aseprite.png" id="3_q6ith"]
+[ext_resource type="Script" path="res://assets/Sprite-0002.gd" id="4_6bwx7"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(247, 342)
+texture = ExtResource("1_54rmd")
+
+[node name="Sprite-0001_aseprite" type="Sprite2D" parent="."]
+position = Vector2(351, 125)
+scale = Vector2(8, 8)
+texture = ExtResource("3_q6ith")
+
+[node name="Sprite-0002" parent="." instance=ExtResource("3_jdbg3")]
+position = Vector2(120, 124)
+scale = Vector2(8, 8)
+autoplay = "default"
+script = ExtResource("4_6bwx7")
